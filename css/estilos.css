@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 800px;
+  height: 60vh;
+  margin: 100px auto;
+  position: relative;
+  display: flex;
+  border: solid rgb(230, 230, 230) 7px;
+  box-shadow: 2px 2px 10px rgb(156, 156, 156);
+  overflow: hidden;
+}
+.slider__section {
+  min-width: 100%;
+  display: block;
+  position: relative;
+  left: -100%;
+}
+.slider__text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 236, 253, 0.171);
+}
+.slider__parrafo{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 2, 2, 0.37);
+}
+.slider__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(209, 209, 209, 0.623);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(75, 74, 74);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: monospace;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+  z-index: 99999;
+}
+.button:hover {
+  background: rgb(230, 230, 230);
+}
+.slider__button-left {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider__button-right {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
