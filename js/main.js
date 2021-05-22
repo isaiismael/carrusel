@@ -38,3 +38,7 @@ function previous() {
         slider.insertAdjacentElement("afterbegin", document.querySelectorAll(".slider__section")[slideSection.length - 1])
     }, 500);
 }
+
+setInterval(() => {
+    next()
+}, 5000);
